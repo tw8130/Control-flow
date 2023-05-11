@@ -1,0 +1,12 @@
+const date = new Date();
+const year = String(date.getFullYear());
+const month = String(date.getMonth() + 1).padStart(2, '0');
+const day = String(date.getDate());
+const currentYear = day + '-' + month + '-' + year;
+const currentYearSlashDay = day + '/' + month + '/' + year;
+const currentYearSlash = month + '/' + day + '/' + year;
+const currentYearSlashHyphen = month + '-' + day + '-' + year;
+console.log(currentYear);
+console.log(currentYearSlashDay);
+console.log(currentYearSlashHyphen);
+console.log(currentYearSlash);
